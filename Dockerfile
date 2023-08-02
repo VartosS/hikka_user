@@ -3,6 +3,7 @@ ENV RAILWAY=true
 ENV DOCKER=true
 ENV GIT_PYTHON_REFRESH=quiet
 ENV PIP_NO_CACHE_DIR=1
+ENV PIP_ROOT_USER_ACTION=ignore
 RUN apt update && apt install libcairo2 git -y --no-install-recommends
 RUN rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp/*
 RUN git clone https://github.com/hikariatama/Hikka /Hikka
